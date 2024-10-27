@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <h1 class="text-2xl text-red-500 pb-4">
+        bài tập in số chẵn lẻ nhỏ hơn 100
+      </h1>
+      <div>
+        <button
+          class="text-white bg-red-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          onclick="demSoChanLe()"
+        >
+          Submit
+        </button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <div class="container mx-auto">
+      <h1 class="text-blue-500 text-2xl">Tính tổng các số chẵn từ 1 đến n</h1>
+
+      <div class="mb-5">
+        <label
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >nhập 1 số nguyên</label
+        >
+        <input
+          type="text"
+          id="number"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="nhập 1 số nguyên dương bất kì"
+          required
+        />
+      </div>
+
+      <button
+        class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        onclick="tinhTong()"
+      >
+        Submit
+      </button>
+      <div id="ketQua"></div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <div class="container mx-auto">
+      <h1 class="text-yellow-500 text-2xl">
+        Có bao nhiêu số chia hết cho 3 từ 0-1000?
+      </h1>
+      <button
+        class="text-white bg-yellow-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        onclick="demChia3()"
+      >
+        Submit
+      </button>
+      <div id="maySo"></div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <div class="container mx-auto">
+      <h1 class="text-2xl text-pink-500">
+        Hãy viết chương trình khi click vào button sẽ in ra 10 thẻ div. Nếu div
+        nào vị trí chẵn thì background màu đỏ và lẻ thì background màu xanh .
+      </h1>
+      <button
+        class="text-white bg-pink-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        onclick="inDiv()"
+      >
+        Submit
+      </button>
+      <div id="in10Div"></div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="container mx-auto">
+      <h1 class="text-black text-2xl">
+        Tìm số nguyên dương nhỏ nhất sao cho: 1+2+…+ n > 10000
+      </h1>
+      <button
+        class="text-white bg-black hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        onclick="timSoNhoNhat()"
+      >
+        Submit
+      </button>
+      <div id="soNhoNhat"></div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <div class="container mx-auto">
+      <h1 class="text-purple-500 text-2xl">
+        Viết chương trình nhập vào 2 số x, n, tính tổng: S(n)=x+x^2+x^3+…+x^n
+      </h1>
+      <div class="mb-5">
+        <label
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >nhập x</label
+        >
+        <input
+          type="text"
+          id="x"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="nhập 1 số nguyên x bất kì"
+          required
+        />
+      </div>
+      <div class="mb-5">
+        <label
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >nhập n</label
+        >
+        <input
+          type="text"
+          id="n"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="nhập 1 số nguyên n bất kì"
+          required
+        />
+      </div>
+
+      <button
+        class="text-white bg-purple-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        onclick="tinhTongHam()"
+      >
+        Submit
+      </button>
+      <div id="tongHam"></div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <div class="container mx-auto">
+      <h1 class="text-gray-500 text-2xl">Nhập vào k. Tính giai thừa 1*2*…*k</h1>
+      <div class="mb-5">
+        <label
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >nhập k</label
+        >
+        <input
+          type="text"
+          id="k"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="nhập 1 số nguyên n bất kì"
+          required
+        />
+      </div>
+
+      <button
+        class="text-white bg-gray-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        onclick="tinhGiaiThua()"
+      >
+        Submit
+      </button>
+      <div id="resultGiaiThua"></div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <div class="container mx-auto">
+      <h1 class="text-emerald-500 text-2xl">
+        Viết chương trình có một input, một button. Khi click vào button thì in
+        ra các số nguyên từ 1 tới giá trị của input.
+      </h1>
+      <div class="mb-5">
+        <label
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >nhập một số bất kì</label
+        >
+        <input
+          type="text"
+          id="soBatKi"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="nhập 1 số bất kì"
+          required
+        />
+      </div>
+
+      <button
+        class="text-white bg-emerald-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        onclick="in1DenSoBatKi()"
+      >
+        Submit
+      </button>
+      <div id="daySoDaIn"></div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.box {
+  margin: 5px;
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+.odd {
+  background-color: blue;
+}
+
+.even {
+  background-color: red;
+}
